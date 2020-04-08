@@ -1,3 +1,5 @@
+def test_parse_template_variables():
+    pass
 
 
 def test_parse_template()
