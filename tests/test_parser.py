@@ -2,7 +2,7 @@ def test_parse_template_variables():
     pass
 
 
-def test_parse_template()
+def test_parse_template():
     pass
 
 
