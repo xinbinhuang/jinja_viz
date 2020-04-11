@@ -34,7 +34,9 @@ jobs:
         key: ${{ runner.os }}-poetry-${{ hashFiles('**/Pipfile.lock') }}
     - name: Install dependencies
       if: steps.cache-poetry.outputs.cache-hit != 'true' 
-      run: poetry install
+      run: |
+        source $HOME/.poetry/env
+        poetry install
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
