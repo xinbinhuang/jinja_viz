@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "jinja_viz"
+version = "0.1.0"
+description = ""
+authors = ["Xinbin Huang <bin.huangxb@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+jinja2 = "^2.11.1"
+
+[tool.poetry.dev-dependencies]
+yapf = "^0.29.0"
+flake8 = "^3.7.9"
+flake8-mypy = "^17.8.0"
+pytest = "^5.4.1"
+pytest-cov = "^2.8.1"
+tox = "^3.14.6"
+
+[build-system]
+requires = ["poetry>=1.0.0"]
+build-backend = "poetry.masonry.api"
