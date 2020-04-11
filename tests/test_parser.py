@@ -1,3 +1,7 @@
+def test_render_template():
+    pass
+
+
 def test_parse_template_variables():
     pass
 
