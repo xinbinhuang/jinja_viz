@@ -5,6 +5,19 @@ from jinja2 import Environment, meta
 PARSER_HANDLER: Environment = Environment()
 
 
+def render_template(source: str, *args, **kwargs) -> str:
+    """
+    Render a Jinaja templates string with variables
+
+    :param source: A Jinja Template presented as a string
+    :type source: str
+    :return: Rendered template as unicode string
+    :rtype: str
+    """
+    template = PARSER_HANDLER.from_string(source)
+    return template.render(*args, **kwargs)
+
+
 def parse_template_variables(source: str, name=None, filename=None) -> Set[str]:
     """
     Parse a Jinja template string and return a set of undeclared variables
